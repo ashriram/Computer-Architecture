@@ -1,0 +1,144 @@
+commit 46dacf7fdcd66487778d8f73bbe202260ccd1162
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Mon Nov 5 19:30:13 2018 -0500
+
+    done
+
+commit e9a5e7659558c5ad12b3928273f1e02d2c61850b
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Mon Nov 5 18:13:20 2018 -0500
+
+    Update MyTest.txt
+
+commit 5957dd2f0fb959d4660543070b2106bc5620ebe6
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Mon Nov 5 18:12:55 2018 -0500
+
+    testing cases
+
+commit 226901ba954f44218f0cc0f0cf723f4e28b7b3cb
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Mon Nov 5 18:11:41 2018 -0500
+
+    Update p4test.txt
+
+commit 4b825b60e8adcad315feaa1166378a92948f8315
+Merge: 433c59b d30abef
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Mon Nov 5 18:11:18 2018 -0500
+
+    changes
+
+commit 433c59b651e0e9ab1a3e87dbc28802efb2382b92
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Mon Nov 5 18:02:01 2018 -0500
+
+    fixed LUI
+
+commit d30abefd5ffc129d428b7a7ee2cc015340a8ffb7
+Author: Jenna <jek343@cornell.edu>
+Date:   Mon Nov 5 17:47:59 2018 -0500
+
+    longer test file
+
+commit 10ad376d6737743ecad3c6cc293f1087ca480d45
+Author: Jenna Kressin <jek343@cornell.edu>
+Date:   Mon Nov 5 17:30:40 2018 -0500
+
+    small p4test.txt file passes
+
+commit 5ff26830df70cc97db8413fe5564fe2659b1bb96
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Mon Nov 5 16:11:02 2018 -0500
+
+    errors
+
+commit 1c79fce1b72b5ad1928ee42fc705759e0819f2f6
+Author: Jenna <jek343@cornell.edu>
+Date:   Mon Nov 5 16:03:36 2018 -0500
+
+    small test file
+
+commit 45d4918c85ae4cb119e9e5af7cc74b91e6bb36e0
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Mon Nov 5 15:51:46 2018 -0500
+
+    done
+
+commit ef846b74fc564551f71883055a281599f8b6331b
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Mon Nov 5 14:24:12 2018 -0500
+
+    error fix
+
+commit 4b185a90c6c23e7249c7a0938c51d7e3431591e6
+Author: Jenna Kressin <jek343@cornell.edu>
+Date:   Mon Nov 5 01:22:57 2018 -0500
+
+    instructions that don't access memory (not debugged)
+
+commit 0c0ddd58afed916f4cf3fa6d0615cbc0ca3569b8
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Sun Nov 4 16:02:27 2018 -0500
+
+    finish our commands and were done?
+
+commit 66ab9efc4e26a06c67232f79e35b07eec6d67560
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Sat Nov 3 19:05:45 2018 -0400
+
+    lots of bugs, I commented out the hex function for now
+
+commit 72e137e74db2ed5ca271c71e0aef92ccdaf3b077
+Author: Jenna Kressin <jek343@cornell.edu>
+Date:   Sat Nov 3 13:49:17 2018 -0400
+
+    hex to decimal (not debugged)
+
+commit e2dc7ab81c0f2fcabe366bea8685cc7f436da828
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Fri Nov 2 16:06:11 2018 -0400
+
+    outline of the thing
+
+commit f833f9bc04fcafcd28e1438cc472e99d1741f8c7
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Fri Nov 2 15:31:47 2018 -0400
+
+    started on mips.c
+
+commit d79834d7b2a2c90a349014e39e93852c70dc81b6
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Thu Nov 1 17:07:05 2018 -0400
+
+    some errors
+
+commit 8b1a109b2f0f72b1d99568606decbdff6fb210f4
+Author: Jackie Zheng <jz675@cornell.edu>
+Date:   Thu Nov 1 14:04:45 2018 -0400
+
+    hashtable done?
+
+commit fa4651e5e90e1d164dbc07aaf98ac49508ea7142
+Author: Jenna Kressin <jek343@cornell.edu>
+Date:   Wed Oct 31 15:15:34 2018 -0400
+
+    linked list
+
+commit a3e2837d301dfe1e08e3666bc62cb9f30b42a5de
+Author: Danny Qiu <dqiu55@gmail.com>
+Date:   Sat Oct 27 15:14:22 2018 -0400
+
+    Fix typo in release file
+
+commit 38b4c12ad2348d8f02257559cfb61e14426f1341
+Author: Danny Qiu <dqiu55@gmail.com>
+Date:   Wed Oct 24 03:35:20 2018 -0400
+
+    Add P4 starter files
+
+commit c4445aa8d511f0b07eecb0b77fcd400926c66860
+Author: Danny Qiu <dqiu55@gmail.com>
+Date:   Sun Aug 26 10:56:40 2018 -0400
+
+    Add README.md

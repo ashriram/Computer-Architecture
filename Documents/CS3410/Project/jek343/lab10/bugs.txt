@@ -1,0 +1,4 @@
+Bug 1: need to pass in pointers to the arr[i] and arr[swap_idx], but now they are not pointers. 
+	Switch to using &arr[i] and &arr[swap_idx] to pass in pointers.
+Bug 2: the swap_idx is with respect to the second part of the array, so need to add i + to the 
+	swap_idx so that the index will reflect the correct index of the entire array

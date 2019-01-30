@@ -1,0 +1,19 @@
+1) 1mb
+2) 4mb
+3) 0.99781799512
+Next section
+4) 1mb
+5) 2mb
+6) 4kb
+7) a NOT SURE
+8) b?  NOT SURE
+Next section
+9) a 
+10) b from graph
+11) b from graph
+Next section 
+12) 512B
+13) 8B
+14) a 
+15) b 
+

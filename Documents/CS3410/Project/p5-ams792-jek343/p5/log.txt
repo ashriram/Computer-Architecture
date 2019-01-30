@@ -1,0 +1,105 @@
+P5 Printout for CS 3410
+-----------------------------------------------------
+Trace name  				art-full.trace
+Cache size  = 32768B. Each block = 8B.
+2-way set associative cache.
+Tag = 18 bits, Index = 11 bits, Offset = 3 bits
+There are 2048 sets total in the cache.
+At this associativity, that means a total of 4096 cache lines.
+Instruction Limit			none
+art-full.trace
+Processed 1957764 trace lines.
+Num Instructions: 			1957764
+Cache Hit Rate = 65.90% (Miss Rate: 34.10%)
+Total number of bytes transferred write-back: 5821208
+Total number of bytes transferred write-thru: 6244532
+P5 Printout for CS 3410
+-----------------------------------------------------
+Trace name  				art-full.trace
+Cache size  = 32768B. Each block = 16B.
+2-way set associative cache.
+Tag = 18 bits, Index = 10 bits, Offset = 4 bits
+There are 1024 sets total in the cache.
+At this associativity, that means a total of 2048 cache lines.
+Instruction Limit			none
+art-full.trace
+Processed 1957764 trace lines.
+Num Instructions: 			1957764
+Cache Hit Rate = 71.92% (Miss Rate: 28.08%)
+Total number of bytes transferred write-back: 9755344
+Total number of bytes transferred write-thru: 9698500
+P5 Printout for CS 3410
+-----------------------------------------------------
+Trace name  				art-full.trace
+Cache size  = 32768B. Each block = 32B.
+2-way set associative cache.
+Tag = 18 bits, Index = 9 bits, Offset = 5 bits
+There are 512 sets total in the cache.
+At this associativity, that means a total of 1024 cache lines.
+Instruction Limit			none
+art-full.trace
+Processed 1957764 trace lines.
+Num Instructions: 			1957764
+Cache Hit Rate = 74.68% (Miss Rate: 25.32%)
+Total number of bytes transferred write-back: 17783104
+Total number of bytes transferred write-thru: 16766148
+P5 Printout for CS 3410
+-----------------------------------------------------
+Trace name  				art-full.trace
+Cache size  = 32768B. Each block = 64B.
+2-way set associative cache.
+Tag = 18 bits, Index = 8 bits, Offset = 6 bits
+There are 256 sets total in the cache.
+At this associativity, that means a total of 512 cache lines.
+Instruction Limit			none
+art-full.trace
+Processed 1957764 trace lines.
+Num Instructions: 			1957764
+Cache Hit Rate = 78.10% (Miss Rate: 21.90%)
+Total number of bytes transferred write-back: 31281024
+Total number of bytes transferred write-thru: 28343332
+P5 Printout for CS 3410
+-----------------------------------------------------
+Trace name  				art-full.trace
+Cache size  = 32768B. Each block = 128B.
+2-way set associative cache.
+Tag = 18 bits, Index = 7 bits, Offset = 7 bits
+There are 128 sets total in the cache.
+At this associativity, that means a total of 256 cache lines.
+Instruction Limit			none
+art-full.trace
+Processed 1957764 trace lines.
+Num Instructions: 			1957764
+Cache Hit Rate = 84.56% (Miss Rate: 15.44%)
+Total number of bytes transferred write-back: 42547328
+Total number of bytes transferred write-thru: 39607268
+P5 Printout for CS 3410
+-----------------------------------------------------
+Trace name  				art-full.trace
+Cache size  = 32768B. Each block = 256B.
+2-way set associative cache.
+Tag = 18 bits, Index = 6 bits, Offset = 8 bits
+There are 64 sets total in the cache.
+At this associativity, that means a total of 128 cache lines.
+Instruction Limit			none
+art-full.trace
+Processed 1957764 trace lines.
+Num Instructions: 			1957764
+Cache Hit Rate = 90.02% (Miss Rate: 9.98%)
+Total number of bytes transferred write-back: 53860096
+Total number of bytes transferred write-thru: 50911076
+P5 Printout for CS 3410
+-----------------------------------------------------
+Trace name  				art-full.trace
+Cache size  = 32768B. Each block = 512B.
+2-way set associative cache.
+Tag = 18 bits, Index = 5 bits, Offset = 9 bits
+There are 32 sets total in the cache.
+At this associativity, that means a total of 64 cache lines.
+Instruction Limit			none
+art-full.trace
+Processed 1957764 trace lines.
+Num Instructions: 			1957764
+Cache Hit Rate = 94.89% (Miss Rate: 5.11%)
+Total number of bytes transferred write-back: 55195136
+Total number of bytes transferred write-thru: 52129636

@@ -1,0 +1,112 @@
+A Simple MIPS Simulator
+-----------------------
+
+In order to run a MIPS executable program, you can either find a machine with a MIPS CPU, or just simulate what A MIPS
+machine would do when running the program. We have written such a simulator. The code is actually nearly trivial (see
+below for a taste of how the simulator works).
+
+If you have MIPS executable program 'helloworld' you can simulate its execution by running:
+
+$ simulate helloworld
+
+You can pass the MIPS program command-line arguments like so:
+
+$ simulate helloworld a b c 1 2 3
+
+
+OS and Filesystem Support
+-------------------------
+
+Normally programs execute within an OS, which manages and multiplexes the underlying hardware resources, and provides
+filesystems, input/output, and other services. Our simulator does not run an OS at all, and doesn't even implement the
+parts of the MIPS instruction set needed to run an OS (i.e. kernel-mode instructions). Instead, the simulator simulates
+a very simple OS. The OS provides only a few basic services:
+
+  output to screen:
+    prints(s) -- print a string
+    printi(i) -- convert an integer to a string and print it
+    putc(c) -- print a character
+
+  input from user (i.e. keyboard):
+    getc() -- read next input character
+    gets() -- read next line of input
+
+  control:
+    exit() -- exit the program and the simulator
+    breakpoint() -- pause the simulator
+
+  filesystems (requires '-f <dir>' option to the simulator):
+    readfile() -- read data from a file
+    writefile() -- write data to a file
+
+The details of these functions can be found in the "mips-tiny-os.h" header file.
+
+For safety, because your MIPS programs might go haywire from time to time, we have disabled filesystem by default. This
+prevents a buggy MIPS program from overwiring your files. To enable the filesystem support you must use the '-f <dir>'
+option to the simulator, in which case the simulator will allow the MIPS program to access files in <dir>.
+
+$ simulate -f /tmp helloworld
+
+
+Compiling MIPS Executable Programs
+----------------------------------
+
+The simulator expects the MIPS program to be an ELF object containing little-endian MIPS code.  You can create such ELF
+objects from C or assembly source using the mipsel-linux-gcc cross compiler, together with the "mips-tiny-os.h" header
+file. You should not use any system header files (e.g. <stdio.h>, <strings.h>), since the simulator doesn't implement
+any services beyond those in "mips-tiny-os.h". You must also pass certain flags to gcc so that the resulting program can
+run without any OS:
+
+$ mipsel-linux-gcc -nostartfiles -nodefaultlibs -static -mno-xgot -mno-abicalls -G 0 -o foo foo.c
+
+For your own sanity, put this command in a Makefile and learn how to use 'make' if you don't know already.
+
+
+Stack Randomization
+-------------------
+
+For security reasons, the simulator randomizes the initial location of the program stack.  This is a very limited form
+of address space layout randomization.
+
+Normally, the simulator picks an initial location for the stack based on the $NETID environment variable, or if that
+doesn't exist, then the $USER environment variable. If your username doesn't match your NetID, you should set $NETID
+properly.
+
+Two options to the simulator let you override this default behavior. The the '-k <key>' option to the simulator lets you
+use an arbitrary string <key> instead of the $NETID or $USER variables.
+
+$ simulate -k whatever helloword
+
+And the '-r' option tells the simulator to pick a random location for the stack.
+
+$ simulate -r helloword
+
+
+Interactive Debugging
+---------------------
+
+The MIPS simulator has some very limited built-in debugging support, enabled using the '-d' option to the simulator.
+
+$ simulate -d helloworld
+Welcome to the MIPS simulator built-in debugger. Type 'help' for a listing of commands.
+>
+
+Instead of running the program, the simulator will start an interactive debugging session. From the '>' prompt, you can
+step one instruction at a time, inspect registers, memory, and the stack, and set breakpoints. The interface is similar
+to gdb.
+
+When debugging, your keyboard is being used both as input to the debugger and as input to the program you are debugging.
+For instance, when the MIPS program issues a "getc" system call, the debugger prompt will not display until you provide
+the program with input and the system call finishes. To avoid this, you can use the '-i <file>' simulator option to
+force the MIPS program to read its input from a file instead of standard input.
+
+
+Simulator Internals
+-------------------
+
+There is nothing mysterious about the simulator. In fact, in past years writing the simulator is the first assignment
+for the class. It is written in C. It has 32 integer variables to maintain the register state for the simulated MIPS
+CPU, plus a few more variables to represent the PC and other special registers, and some large byte arrays to represent
+the simulated MIPS memory. The simulator reads the instructions from the binary MIPS executable file, decodes them using
+a series of if-else and switch statements, and simulates their execution one at a time by modifying the register
+variables and "memory" byte arrays.
